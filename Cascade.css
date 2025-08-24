@@ -1,0 +1,253 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f9f9ff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #ffdd57;
+}
+
+/* Hero */
+.hero {
+  padding: 120px 20px 50px;
+  text-align: center;
+  height: 600px;
+}
+
+.logo img{
+  height: 150px;
+  width: 200px;
+  border-radius: 20%;
+}
+.hero #clg-name {
+  font-family: cursive;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.thought {
+  margin-top: 15px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #333;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section */
+.clubs-section {
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 50px;
+  height: 400px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Club Card */
+.club-card {
+  display: block;
+  padding: 40px 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none; /* removes underline */
+  transition: all 0.3s ease;
+  width: 250px;
+}
+.club-card img{
+  height: 50px;
+  width: 50px;
+
+}
+
+.club-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Swiper Controls */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333;
+}
+
+.swiper-pagination-bullet {
+  background: #333;
+}
+
+
+
+/* Events & Announcements */
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.event-card {
+  display: flex;
+  gap: 15px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.event-date {
+  background: #e0d4ff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #4a2691;
+}
+
+.event-date span {
+  display: block;
+  font-size: 12px;
+}
+
+.event-date strong {
+  font-size: 18px;
+}
+
+.btn {
+  margin-top: 10px;
+  background: #d6c2ff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #4a2691;
+
+}
+ .btn:hover {
+      background-color: #9c72ef; /* darker green */
+      transform: scale(1.05); /* slightly bigger */
+       box-shadow: 0 0 10px #ac86f7,
+                  0 0 10px #ac86f7 ,
+                  0 0 10px #ac86f7; /* glowing effect */
+
+    }
+
+.announcement-card {
+  background: #fff7d6;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ddd;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffdd57;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
+  .navbar .nav-links {
+    display: none;
+  }
+}
